@@ -9,3 +9,5 @@ Tato první vrstva je čistý frontend bez závislosti na starém marketplace k�
 
 <!-- Force production redeploy -->
 <!-- Fleet photo update: Skoda and Volkswagen imagery. -->
+
+<!-- Skoda and Volkswagen imagery deployment trigger. -->
