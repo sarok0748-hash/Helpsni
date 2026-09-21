@@ -150,3 +150,73 @@ nav a:hover{color:var(--ink)}
 @media(max-width:600px){.cookie-settings-dialog{padding:25px 20px;border-radius:22px}.cookie-settings-actions .btn{width:100%}}
 
 .row-actions{display:flex;align-items:center;gap:8px}.row-actions .icon{min-width:36px}
+
+
+/* Image-rich homepage */
+.hero-photo{position:relative;max-width:none;min-height:760px;padding:0 clamp(20px,6vw,90px);display:flex;align-items:center;overflow:hidden;background:#0d1210;color:#fff}
+.hero-photo-media,.hero-photo-overlay{position:absolute;inset:0}
+.hero-photo-media img{width:100%;height:100%;object-fit:cover;object-position:center 55%;display:block}
+.hero-photo-overlay{background:linear-gradient(90deg,rgba(5,10,8,.88) 0%,rgba(5,10,8,.68) 43%,rgba(5,10,8,.16) 78%,rgba(5,10,8,.25) 100%)}
+.hero-photo-content{position:relative;z-index:2;max-width:820px;padding:100px 0}
+.hero-photo .eyebrow{color:#64d8aa}
+.hero-photo h1{max-width:820px;color:#fff}
+.hero-photo h1 span{color:#6ee0b1}
+.hero-photo .lead{color:#e1e8e4;max-width:650px}
+.hero-photo .hero-light{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.45);color:#fff;backdrop-filter:blur(8px)}
+.hero-photo .hero-light:hover{background:rgba(255,255,255,.2);color:#fff}
+.hero-photo .hero-note{color:#d7e0dc}
+
+.visual-products{padding-top:125px;padding-bottom:125px}
+.visual-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.visual-card{position:relative;min-height:430px;border-radius:28px;overflow:hidden;background:#111;color:#fff;isolation:isolate}
+.visual-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:transform .6s ease}
+.visual-card:hover img{transform:scale(1.045)}
+.visual-card-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 25%,rgba(0,0,0,.78) 100%);z-index:1}
+.visual-card-copy{position:absolute;left:26px;right:22px;bottom:25px;z-index:2}
+.visual-card-copy>span{font-size:10px;letter-spacing:.14em;font-weight:950;color:#bdebd8}
+.visual-card-copy h3{font-size:27px;line-height:1.02;letter-spacing:-.045em;margin:10px 0 18px;max-width:260px}
+.card-link{padding:0;border:0;background:none;color:#fff;font-weight:850;font-size:13px;cursor:pointer}
+.card-link:hover{color:#6ee0b1}
+
+.image-split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);min-height:720px;background:#eef3f0}
+.image-split-media{min-height:620px;overflow:hidden}
+.image-split-media img{width:100%;height:100%;min-height:620px;object-fit:cover;display:block}
+.image-split-copy{padding:90px clamp(30px,7vw,110px);display:flex;flex-direction:column;justify-content:center}
+.image-split-copy h2{font-size:clamp(44px,5vw,72px);line-height:.94;letter-spacing:-.065em;margin:0 0 25px}
+.image-split-copy>p:not(.eyebrow){font-size:18px;line-height:1.65;color:var(--muted);max-width:620px;margin:0 0 28px}
+.image-split .feature-list{max-width:650px;margin-bottom:32px}
+.image-split .feature-list>div{padding:18px 0}
+.image-split-reverse .image-split-media{order:2}
+.image-split-reverse .image-split-copy{order:1;background:#fff}
+.driver-points{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.driver-points span{border:1px solid #d8e2dd;background:#f7faf8;padding:10px 13px;border-radius:999px;color:#45534d;font-size:13px;font-weight:750}
+
+.trust-photo{position:relative;overflow:hidden}
+.trust-photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(24,168,111,.18),transparent 35%);pointer-events:none}
+.trust-photo>div{position:relative;z-index:1}
+.trust-lead{color:#b8c5bf;max-width:560px;font-size:18px;line-height:1.6}
+
+@media(max-width:1100px){
+.visual-grid{grid-template-columns:repeat(2,1fr)}
+.hero-photo{min-height:680px}
+}
+@media(max-width:800px){
+.hero-photo{min-height:650px;padding:0 5vw}
+.hero-photo-overlay{background:linear-gradient(180deg,rgba(5,10,8,.72),rgba(5,10,8,.86))}
+.visual-grid{grid-template-columns:1fr 1fr}
+.visual-card{min-height:390px}
+.image-split{grid-template-columns:1fr}
+.image-split-media,.image-split-media img{min-height:430px;height:430px}
+.image-split-reverse .image-split-media{order:1}
+.image-split-reverse .image-split-copy{order:2}
+.image-split-copy{padding:70px 6vw}
+}
+@media(max-width:560px){
+.hero-photo{min-height:650px}
+.hero-photo-content{padding:80px 0}
+.visual-products{padding-top:80px;padding-bottom:80px}
+.visual-grid{grid-template-columns:1fr}
+.visual-card{min-height:390px}
+.image-split-media,.image-split-media img{min-height:360px;height:360px}
+.image-split-copy{padding:65px 5vw}
+}
