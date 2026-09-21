@@ -1,0 +1,1 @@
+alter table public.carriers add column if not exists fleet_size text;
