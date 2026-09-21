@@ -10,3 +10,5 @@ Tato první vrstva je čistý frontend bez závislosti na starém marketplace k�
 <!-- Production redeploy marker: restored known-working Helpsni version. -->
 
 <!-- Deployment marker: assignment management update. -->
+
+<!-- Taxi branch deployment trigger. -->
