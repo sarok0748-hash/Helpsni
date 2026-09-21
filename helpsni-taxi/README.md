@@ -18,3 +18,5 @@ Tato první vrstva je čistý frontend bez závislosti na starém marketplace k�
 <!-- Deployment trigger verification. -->
 
 <!-- Browser back navigation deployment trigger. -->
+
+<!-- Footer navigation deployment trigger. -->
