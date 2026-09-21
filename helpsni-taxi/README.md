@@ -8,3 +8,4 @@ Importujte repozitář `sarok0748-hash/Helpsni` jako nový Vercel projekt a nast
 Tato první vrstva je čistý frontend bez závislosti na starém marketplace kódu.
 
 <!-- Force production redeploy -->
+<!-- Fleet photo update: Skoda and Volkswagen imagery. -->
