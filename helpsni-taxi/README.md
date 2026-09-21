@@ -22,3 +22,5 @@ Tato první vrstva je čistý frontend bez závislosti na starém marketplace k�
 <!-- Footer navigation deployment trigger. -->
 
 <!-- Footer products deployment trigger. -->
+
+<!-- Structured info pages deployment trigger. -->
