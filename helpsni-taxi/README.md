@@ -8,21 +8,13 @@ Importujte repozitář `sarok0748-hash/Helpsni` jako nový Vercel projekt a nast
 Tato první vrstva je čistý frontend bez závislosti na starém marketplace kódu.
 
 <!-- Production redeploy marker: restored known-working Helpsni version. -->
-
 <!-- Deployment marker: assignment management update. -->
-
 <!-- Taxi branch deployment trigger. -->
-
 <!-- Syntax fix redeploy trigger. -->
-
 <!-- Deployment trigger verification. -->
-
 <!-- Browser back navigation deployment trigger. -->
-
 <!-- Footer navigation deployment trigger. -->
-
 <!-- Footer products deployment trigger. -->
-
 <!-- Structured info pages deployment trigger. -->
-
 <!-- FAQ rendering deployment trigger. -->
+<!-- Homepage syntax correction redeploy trigger. -->
