@@ -685,3 +685,5 @@ nav a:hover{color:var(--ink);transform:translateY(-1px)}
 .resource-actions{display:flex;align-items:center;gap:7px;margin-left:auto}.resource-actions .icon{border:1px solid #dfe7e2;border-radius:10px;padding:8px 10px;font-size:11px;font-weight:800;background:#fff;color:var(--ink)}.resource-actions .icon:hover{background:#f4f8f5}.resource-actions .danger{font-size:18px;padding:5px 10px;color:#8d3d3d}.edit-btn{cursor:pointer}
 
 .assign-btn{border:1px solid #dfe7e2;background:#fff;border-radius:9px;padding:6px 9px;font-size:10px;font-weight:800;color:var(--ink);cursor:pointer}.assign-btn:hover{background:#f4f8f5}.resource-meta{align-items:center}
+
+.resource-meta .doc-warning{color:#8a5b13;background:#fff5df;border:1px solid #f0d99e;border-radius:999px;padding:5px 8px}.resource-meta .doc-expired{color:#8d3d3d;background:#fff0f0;border:1px solid #efcaca;border-radius:999px;padding:5px 8px}.resource-meta .doc-ok{color:#28704b;background:#eef8f1;border:1px solid #cfe8d8;border-radius:999px;padding:5px 8px}
