@@ -11,3 +11,5 @@ Tato první vrstva je čistý frontend bez závislosti na starém marketplace k�
 <!-- Fleet photo update: Skoda and Volkswagen imagery. -->
 
 <!-- Skoda and Volkswagen imagery deployment trigger. -->
+
+<!-- FINAL CAR IMAGE DEPLOY TRIGGER 2026-09-21 -->
