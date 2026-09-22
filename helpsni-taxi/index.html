@@ -5,18 +5,35 @@
 <meta name="theme-color" content="#0b1220"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
 <title>Helpsni</title>
 <meta name="description" content="Helpsni – digitální platforma pro dopravu, řidiče a flotily.">
-<link rel="stylesheet" href="./styles.css?v=5">
+<link rel="stylesheet" href="./styles.css?v=6">
 <style>
 #boot{min-height:100vh;background:#fff;color:#111514;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-.boot-inner{max-width:1180px;margin:auto;padding:72px 6vw}
-.boot-logo{font-size:25px;font-weight:950;letter-spacing:-.075em}.boot-logo span{color:#18a86f}
+.boot-inner{max-width:1180px;margin:auto;padding:72px 6vw}.boot-logo{font-size:25px;font-weight:950;letter-spacing:-.075em}.boot-logo span{color:#18a86f}
 .boot-hero{margin-top:90px;max-width:760px}.boot-kicker{font-size:11px;font-weight:900;letter-spacing:.16em;color:#0d7d52}.boot-hero h1{font-size:clamp(48px,10vw,88px);line-height:.92;letter-spacing:-.07em;margin:14px 0 24px}.boot-hero p{font-size:19px;line-height:1.55;color:#68736f;max-width:620px}.boot-error{display:none;margin-top:28px;padding:16px 18px;border-radius:16px;background:#fff3f1;border:1px solid #f1c8c2;color:#8f261c;font-size:14px}
 </style>
 <script>
-window.addEventListener("error",function(e){
-  var box=document.getElementById("boot-error");
-  if(box){box.style.display="block";box.textContent="Helpsni se nepodařilo načíst. Zkuste stránku obnovit.";}
-});
+(function(){
+  var failed=false;
+  window.addEventListener("error",function(e){
+    if(e&&e.message&&!/Script error/i.test(e.message)) console.error("[Helpsni]",e.message);
+    var box=document.getElementById("boot-error");
+    if(box&&document.querySelector("#app > #boot")){box.style.display="block";box.textContent="Helpsni se nepodařilo načíst. Zkuste stránku obnovit.";}
+  });
+  function load(src,ok,bad){
+    var s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=bad;document.head.appendChild(s);
+  }
+  function loadApp(){
+    if(window.supabase){load("./app.js?v=6",function(){},function(){showError()});}
+    else showError();
+  }
+  function showError(){
+    var box=document.getElementById("boot-error");
+    if(box){box.style.display="block";box.textContent="Nepodařilo se načíst potřebnou část Helpsni. Obnovte prosím stránku.";}
+  }
+  var primary="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js";
+  var fallback="https://unpkg.com/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js";
+  load(primary,loadApp,function(){load(fallback,loadApp,showError)});
+})();
 </script>
 </head>
 <body>
@@ -33,7 +50,5 @@ window.addEventListener("error",function(e){
     </div>
   </main>
 </div>
-<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
-<script defer src="./app.js?v=5"></script>
 </body>
 </html>
