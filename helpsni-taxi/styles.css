@@ -244,3 +244,25 @@ nav a:hover{color:var(--ink)}
   .nav-actions{gap:3px}
   .mobile-menu{top:calc(100% + 7px)}
 }
+
+
+/* Three audience paths — Bolt-inspired service selection */
+.audience-paths{background:#f4f7f5;padding:115px clamp(20px,5vw,72px)}
+.audience-paths-inner{max-width:1380px;margin:0 auto}
+.audience-paths-heading{max-width:720px;margin-bottom:45px}
+.audience-paths-heading h2{font-size:clamp(48px,5vw,72px);line-height:.94;letter-spacing:-.065em;margin:0 0 22px}
+.audience-paths-heading>p:not(.eyebrow){color:var(--muted);font-size:18px;line-height:1.65;max-width:650px;margin:0}
+.audience-paths-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.audience-path{background:#fff;border:1px solid #dfe7e2;border-radius:28px;overflow:hidden;min-width:0;box-shadow:0 10px 35px rgba(16,24,20,.06);display:flex;flex-direction:column;transition:transform .2s,box-shadow .2s,border-color .2s}
+.audience-path:hover{transform:translateY(-5px);border-color:#c6d2cc;box-shadow:0 20px 45px rgba(16,24,20,.1)}
+.audience-path-media{height:270px;overflow:hidden;background:#dfe7e2}
+.audience-path-media img{width:100%;height:100%;object-fit:cover;display:block;transition:transform .55s ease}
+.audience-path:hover .audience-path-media img{transform:scale(1.04)}
+.audience-path-body{padding:28px;display:flex;flex-direction:column;align-items:flex-start;flex:1}
+.audience-path-body>span{font-size:10px;letter-spacing:.14em;font-weight:950;color:var(--green-dark)}
+.audience-path-body h3{font-size:32px;letter-spacing:-.05em;line-height:1;margin:15px 0 10px}
+.audience-path-body p{color:var(--muted);line-height:1.55;margin:0 0 24px}
+.audience-path-body .btn{margin-top:auto}
+.audience-passenger .audience-path-body>span{color:#66736d}
+@media(max-width:900px){.audience-paths{padding:90px 5vw}.audience-paths-grid{grid-template-columns:1fr}.audience-path-media{height:300px}}
+@media(max-width:560px){.audience-paths{padding:75px 5vw}.audience-path-media{height:235px}.audience-path-body{padding:24px}.audience-path-body h3{font-size:28px}}
