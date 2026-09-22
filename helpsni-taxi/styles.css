@@ -298,7 +298,7 @@ nav a:hover{color:var(--ink)}
 .audience-path-body h3{font-size:32px;letter-spacing:-.05em;line-height:1;margin:15px 0 10px}
 .audience-path-body p{color:var(--muted);line-height:1.55;margin:0 0 24px}
 .audience-path-body .btn{margin-top:auto}
-.audience-passenger .audience-path-body>span{color:#66736d}
+.audience-passenger .audience-path-body>span{color:#155EEF}.audience-passenger .audience-path-body .btn.ghost{color:var(--blue);border-color:#BFD3FF}.audience-passenger .audience-path-body .btn.ghost:hover{background:#EEF3FF;border-color:#155EEF}
 @media(max-width:900px){.audience-paths{padding:90px 5vw}.audience-paths-grid{grid-template-columns:1fr}.audience-path-media{height:300px}}
 @media(max-width:560px){.audience-paths{padding:75px 5vw}.audience-path-media{height:235px}.audience-path-body{padding:24px}.audience-path-body h3{font-size:28px}}
 
