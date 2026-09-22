@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#0b1220"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
 <title>Helpsni</title>
 <meta name="description" content="Helpsni – digitální platforma pro dopravu, řidiče a flotily.">
-<link rel="stylesheet" href="./styles.css?v=6">
+<link rel="stylesheet" href="./styles.css?v=7">
 <style>
 #boot{min-height:100vh;background:#fff;color:#111514;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 .boot-inner{max-width:1180px;margin:auto;padding:72px 6vw}.boot-logo{font-size:25px;font-weight:950;letter-spacing:-.075em}.boot-logo span{color:#18a86f}
@@ -13,7 +13,6 @@
 </style>
 <script>
 (function(){
-  var failed=false;
   window.addEventListener("error",function(e){
     if(e&&e.message&&!/Script error/i.test(e.message)) console.error("[Helpsni]",e.message);
     var box=document.getElementById("boot-error");
@@ -23,8 +22,11 @@
     var s=document.createElement("script");s.src=src;s.onload=ok;s.onerror=bad;document.head.appendChild(s);
   }
   function loadApp(){
-    if(window.supabase){load("./app.js?v=6",function(){},function(){showError()});}
-    else showError();
+    if(window.supabase){
+      load("./app.js?v=7",function(){
+        load("./image-overrides.js?v=1",function(){},function(){});
+      },function(){showError()});
+    } else showError();
   }
   function showError(){
     var box=document.getElementById("boot-error");
