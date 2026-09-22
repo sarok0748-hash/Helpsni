@@ -2,11 +2,38 @@
 <html lang="cs">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#0b1220"><title>Helpsni</title>
-<meta name="description" content="Helpsni – digitální platforma pro dopravce, řidiče a vozidla.">
-<link rel="stylesheet" href="./styles.css?v=4">
+<meta name="theme-color" content="#0b1220"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes">
+<title>Helpsni</title>
+<meta name="description" content="Helpsni – digitální platforma pro dopravu, řidiče a flotily.">
+<link rel="stylesheet" href="./styles.css?v=5">
+<style>
+#boot{min-height:100vh;background:#fff;color:#111514;font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+.boot-inner{max-width:1180px;margin:auto;padding:72px 6vw}
+.boot-logo{font-size:25px;font-weight:950;letter-spacing:-.075em}.boot-logo span{color:#18a86f}
+.boot-hero{margin-top:90px;max-width:760px}.boot-kicker{font-size:11px;font-weight:900;letter-spacing:.16em;color:#0d7d52}.boot-hero h1{font-size:clamp(48px,10vw,88px);line-height:.92;letter-spacing:-.07em;margin:14px 0 24px}.boot-hero p{font-size:19px;line-height:1.55;color:#68736f;max-width:620px}.boot-error{display:none;margin-top:28px;padding:16px 18px;border-radius:16px;background:#fff3f1;border:1px solid #f1c8c2;color:#8f261c;font-size:14px}
+</style>
+<script>
+window.addEventListener("error",function(e){
+  var box=document.getElementById("boot-error");
+  if(box){box.style.display="block";box.textContent="Helpsni se nepodařilo načíst. Zkuste stránku obnovit.";}
+});
+</script>
 </head>
-<body><div id="app"></div>
-<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
-<script src="./app.js?v=4"></script>
-</body></html>
+<body>
+<div id="app">
+  <main id="boot" aria-label="Načítání Helpsni">
+    <div class="boot-inner">
+      <div class="boot-logo">HEL<span>P</span>SNI</div>
+      <section class="boot-hero">
+        <div class="boot-kicker">DIGITÁLNÍ PLATFORMA PRO DOPRAVU</div>
+        <h1>Váš provoz.<br>Jednodušeji.</h1>
+        <p>Helpsni spojuje řidiče, flotily a dopravní provoz v jednom přehledném prostředí.</p>
+        <div id="boot-error" class="boot-error" role="alert"></div>
+      </section>
+    </div>
+  </main>
+</div>
+<script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2.57.4/dist/umd/supabase.min.js"></script>
+<script defer src="./app.js?v=5"></script>
+</body>
+</html>
