@@ -1,0 +1,1 @@
+(function(){var src='data:image/webp;base64,BASE64_PLACEHOLDER';function apply(){var img=document.querySelector('.hero-photo-media img');if(img){img.src=src;img.removeAttribute('fetchpriority');img.loading='eager';img.decoding='async';}}if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',apply);}else{apply();}setTimeout(apply,100);})();
