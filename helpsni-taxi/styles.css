@@ -10,7 +10,7 @@ button{cursor:pointer}
 nav{display:flex;align-items:center;gap:30px}
 nav a{color:#4c5752;text-decoration:none;font-size:14px;font-weight:750;transition:color .18s}
 nav a:hover{color:var(--ink)}
-.nav>div{display:flex;gap:9px;align-items:center}
+.nav-actions{display:flex;gap:9px;align-items:center}
 .btn{border:0;border-radius:999px;background:var(--green);color:#fff;padding:13px 21px;font-weight:850;cursor:pointer;box-shadow:0 8px 22px rgba(24,168,111,.16);transition:transform .18s,background .18s,box-shadow .18s}
 .btn:hover{transform:translateY(-2px);background:var(--green-dark);box-shadow:0 12px 28px rgba(24,168,111,.22)}
 .btn.ghost{background:#fff;color:var(--ink);border:1px solid #dce3df;box-shadow:none}
