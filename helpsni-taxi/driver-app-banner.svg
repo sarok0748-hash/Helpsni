@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1536 1024" role="img" aria-label="Helpsni aplikace pro řidiče v mobilu">
+  <defs>
+    <linearGradient id="screen" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#ffffff"/><stop offset="1" stop-color="#f4f7f5"/></linearGradient>
+    <linearGradient id="map" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#eef7f1"/><stop offset="1" stop-color="#d9eee2"/></linearGradient>
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%"><feDropShadow dx="0" dy="12" stdDeviation="16" flood-opacity=".28"/></filter>
+    <clipPath id="phoneClip"><rect x="598" y="28" width="318" height="785" rx="43"/></clipPath>
+  </defs>
+  <image href="https://images.unsplash.com/photo-1771227241320-8fc5388259c7?auto=format&amp;fit=crop&amp;fm=jpg&amp;q=92&amp;w=2400" x="0" y="0" width="1536" height="1024" preserveAspectRatio="xMidYMid slice"/>
+  <g transform="rotate(-2.8 757 420)" filter="url(#shadow)">
+    <rect x="587" y="17" width="340" height="807" rx="52" fill="#111719"/>
+    <rect x="598" y="28" width="318" height="785" rx="43" fill="url(#screen)"/>
+    <g clip-path="url(#phoneClip)">
+      <rect x="598" y="28" width="318" height="785" fill="#f7f9f8"/>
+      <rect x="598" y="28" width="318" height="86" fill="#fff"/>
+      <rect x="705" y="37" width="105" height="28" rx="15" fill="#0f1514"/>
+      <text x="620" y="55" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#111514">9:41</text>
+      <text x="838" y="55" font-family="Arial,sans-serif" font-size="12" fill="#111514">● 100%</text>
+      <text x="616" y="98" font-family="Arial,sans-serif" font-size="23" font-weight="800" fill="#111514">Helpsni</text>
+      <circle cx="880" cy="91" r="18" fill="#dce9e3"/><circle cx="880" cy="88" r="7" fill="#18a86f"/>
+      <rect x="616" y="125" width="282" height="49" rx="17" fill="#e9f8f1"/>
+      <circle cx="638" cy="149" r="7" fill="#18a86f"/>
+      <text x="653" y="155" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#18352a">Jste online</text>
+      <rect x="846" y="137" width="37" height="23" rx="12" fill="#18a86f"/><circle cx="872" cy="148" r="9" fill="#fff"/>
+      <rect x="616" y="188" width="282" height="246" rx="22" fill="url(#map)"/>
+      <path d="M616 315 C680 260 720 330 770 280 S855 255 898 300" fill="none" stroke="#b6d6c4" stroke-width="22"/>
+      <path d="M620 385 C690 350 742 390 800 345 S860 350 900 380" fill="none" stroke="#fff" stroke-width="15"/>
+      <path d="M650 205 L700 430 M770 190 L820 430 M880 210 L760 430" fill="none" stroke="#c9dfd3" stroke-width="8"/>
+      <circle cx="758" cy="310" r="17" fill="#18a86f" stroke="#fff" stroke-width="7"/><circle cx="758" cy="310" r="5" fill="#fff"/>
+      <rect x="635" y="207" width="122" height="33" rx="14" fill="#fff" opacity=".94"/>
+      <text x="650" y="229" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#40524a">Nová objednávka</text>
+      <rect x="616" y="415" width="282" height="235" rx="24" fill="#fff"/>
+      <circle cx="642" cy="451" r="6" fill="#18a86f"/><text x="656" y="456" font-family="Arial,sans-serif" font-size="13" fill="#65716c">Nová objednávka</text>
+      <text x="637" y="491" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#111514">Karlovo náměstí 12</text>
+      <text x="637" y="514" font-family="Arial,sans-serif" font-size="12" fill="#75817b">Chomutov</text>
+      <circle cx="642" cy="542" r="6" fill="#e34d4d"/><text x="656" y="547" font-family="Arial,sans-serif" font-size="17" font-weight="800" fill="#111514">OC Chomutov</text>
+      <text x="637" y="570" font-family="Arial,sans-serif" font-size="12" fill="#75817b">Chomutov</text>
+      <text x="846" y="490" font-family="Arial,sans-serif" font-size="21" font-weight="900" fill="#111514">120 Kč</text>
+      <text x="851" y="512" font-family="Arial,sans-serif" font-size="12" fill="#75817b">≈ 8 min</text>
+      <rect x="636" y="590" width="178" height="43" rx="17" fill="#18a86f"/><text x="676" y="618" font-family="Arial,sans-serif" font-size="15" font-weight="800" fill="#fff">Přijmout</text>
+      <circle cx="861" cy="611" r="22" fill="#eef2ef"/><path d="M852 602 L870 620 M870 602 L852 620" stroke="#111514" stroke-width="3" stroke-linecap="round"/>
+      <rect x="598" y="650" width="318" height="163" fill="#fff"/><line x1="616" y1="650" x2="898" y2="650" stroke="#e3e9e5"/>
+      <text x="648" y="695" font-family="Arial,sans-serif" font-size="12" fill="#18a86f" font-weight="800">⌂</text><text x="720" y="695" font-family="Arial,sans-serif" font-size="12" fill="#68736f">Jízdy</text><text x="790" y="695" font-family="Arial,sans-serif" font-size="12" fill="#68736f">Zprávy</text><text x="852" y="695" font-family="Arial,sans-serif" font-size="12" fill="#68736f">Profil</text><text x="641" y="718" font-family="Arial,sans-serif" font-size="10" fill="#18a86f" font-weight="800">Domů</text>
+    </g>
+  </g>
+</svg>
