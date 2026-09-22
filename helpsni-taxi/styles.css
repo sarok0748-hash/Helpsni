@@ -208,7 +208,7 @@ nav a:hover{color:var(--ink)}
 .helpsni-phone-top span{color:#155EEF;font-size:7px}
 .helpsni-phone-map{position:relative;height:92px;margin:5px;background:linear-gradient(135deg,#DDE8FF 0%,#EEF3FF 50%,#D5E2FF 100%);overflow:hidden;border-radius:9px}
 .helpsni-phone-large .helpsni-phone-map{height:124px;margin:7px}
-.helpsni-phone-map:before,.helpsni-phone-map:after{content:"";position:absolute;background:rgba(24,168,111,.18);transform:rotate(25deg)}
+.helpsni-phone-map:before,.helpsni-phone-map:after{content:"";position:absolute;background:rgba(21,94,239,.18);transform:rotate(25deg)}
 .helpsni-phone-map:before{width:160%;height:2px;left:-25%;top:50%}
 .helpsni-phone-map:after{width:2px;height:160%;left:58%;top:-25%;transform:rotate(-38deg)}
 .helpsni-phone-map i{position:absolute;width:5px;height:5px;border-radius:50%;background:#9eb5ab}
@@ -227,7 +227,7 @@ nav a:hover{color:var(--ink)}
 
 
 .trust-photo{position:relative;overflow:hidden}
-.trust-photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(24,168,111,.18),transparent 35%);pointer-events:none}
+.trust-photo:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 80% 30%,rgba(21,94,239,.18),transparent 35%);pointer-events:none}
 .trust-photo>div{position:relative;z-index:1}
 .trust-lead{color:#b8c5bf;max-width:560px;font-size:18px;line-height:1.6}
 
