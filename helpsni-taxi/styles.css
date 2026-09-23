@@ -6,7 +6,7 @@ button,input,select{font:inherit}
 button{cursor:pointer}
 .nav{height:78px;display:flex;align-items:center;justify-content:space-between;padding:0 clamp(20px,5vw,72px);background:rgba(255,255,255,.92);border-bottom:1px solid rgba(228,233,230,.8);position:sticky;top:0;z-index:20;backdrop-filter:blur(18px)}
 .logo{font-size:25px;text-decoration:none;color:var(--ink);font-weight:950;letter-spacing:-.075em}
-.logo span{color:var(--blue)}.logo-image{display:flex;align-items:center;height:100%}.logo-image img{display:block;width:145px;height:auto;max-height:54px;object-fit:contain}
+.logo span{color:var(--blue)}.logo-image{display:flex;align-items:center;width:214px;height:100%;flex:0 0 214px}.logo-image img{display:block;width:214px;height:72px;max-width:none;max-height:72px;object-fit:contain}
 nav{display:flex;align-items:center;gap:30px}
 nav a{color:#4c5752;text-decoration:none;font-size:14px;font-weight:750;transition:color .18s}
 nav a:hover{color:var(--ink)}
