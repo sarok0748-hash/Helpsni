@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#12bd70">
+<title>Práce na den | Helpsni</title>
+<style>
+:root{--green:#12bd70;--ink:#10221d;--muted:#5e7069;--line:#dfe9e3;--soft:#f3faf6}
+*{box-sizing:border-box}body{margin:0;background:#f7faf8;color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}button,input,select{font:inherit}button{cursor:pointer}.top{height:76px;background:#fff;border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;padding:0 max(5%,calc((100% - 1120px)/2));gap:18px}.brand{font-size:24px;font-weight:900;color:var(--ink);text-decoration:none}.brand span{color:var(--green)}.back{color:var(--ink);text-decoration:none;font-weight:750}.wrap{max-width:1120px;margin:auto;padding:54px 22px 76px}.eyebrow{font-size:12px;letter-spacing:.14em;font-weight:900;color:#0b9d5a}.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:36px;align-items:center;margin-bottom:34px}.hero h1{font-size:clamp(40px,6vw,66px);line-height:1.02;letter-spacing:-.04em;margin:14px 0 20px}.hero p{font-size:18px;line-height:1.65;color:var(--muted);max-width:650px}.pill{display:inline-flex;align-items:center;gap:8px;background:#e4fff0;color:#087a48;border-radius:999px;padding:9px 13px;font-weight:800;font-size:13px}.visual{background:#10221d;color:#fff;border-radius:28px;padding:28px;box-shadow:0 22px 60px #10221d18}.visual h2{font-size:23px;margin:12px 0}.visual p{font-size:15px;color:#c0d0c9}.job{display:flex;align-items:center;gap:13px;background:#1d3930;border:1px solid #335347;border-radius:16px;padding:14px;margin-top:11px}.emoji{font-size:25px}.job b{display:block}.job small{display:block;color:#b8cbc1;margin-top:4px}.layout{display:grid;grid-template-columns:1fr 330px;gap:22px;align-items:start}.panel{background:#fff;border:1px solid var(--line);border-radius:24px;padding:27px;margin-bottom:18px}.panel h2{margin:0 0 8px;font-size:24px}.sub{color:var(--muted);line-height:1.55;margin:0 0 22px}.toggle-row{display:flex;justify-content:space-between;gap:16px;align-items:center;padding:16px;background:var(--soft);border-radius:16px}.toggle-row b{display:block}.toggle-row small{display:block;color:var(--muted);margin-top:4px}.switch{position:relative;width:52px;height:30px;flex:0 0 auto}.switch input{opacity:0;width:1px;height:1px;position:absolute}.track{position:absolute;inset:0;background:#b8c5be;border-radius:30px;transition:.2s}.track:after{content:"";position:absolute;left:4px;top:4px;width:22px;height:22px;border-radius:50%;background:white;transition:.2s;box-shadow:0 1px 4px #0002}.switch input:checked+.track{background:var(--green)}.switch input:checked+.track:after{transform:translateX(22px)}.switch input:focus-visible+.track{outline:3px solid #8bdcb5;outline-offset:2px}.field{display:grid;gap:8px;margin-top:20px}.field label,.field-title{font-weight:800}.field input[type=text],.field select{width:100%;padding:13px 14px;border:1px solid #ccd9d1;border-radius:12px;background:#fff;color:var(--ink)}.hint{font-size:13px;color:var(--muted);line-height:1.5}.choices{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:12px}.choice{display:flex;align-items:flex-start;gap:10px;border:1px solid var(--line);border-radius:14px;padding:13px;cursor:pointer;min-height:62px}.choice:has(input:checked){border-color:#59d99c;background:#effcf5}.choice input{margin-top:4px;accent-color:var(--green)}.choice span{font-weight:650;font-size:14px;line-height:1.35}.primary{width:100%;border:0;border-radius:13px;background:var(--green);color:#fff;padding:15px 18px;font-weight:900;margin-top:22px}.primary:hover{filter:brightness(.96)}.status{margin-top:14px;padding:13px 14px;background:#effcf5;border:1px solid #bdeed2;border-radius:13px;color:#087a48;font-weight:750;display:none}.status.show{display:block}.summary{position:sticky;top:18px}.summary h3{margin:0 0 16px;font-size:20px}.summary-line{display:flex;justify-content:space-between;gap:12px;border-bottom:1px solid var(--line);padding:12px 0;font-size:14px}.summary-line:last-of-type{border-bottom:0}.summary-line span{color:var(--muted)}.note{font-size:12px;color:var(--muted);line-height:1.5;margin:16px 0 0}.footer{text-align:center;color:var(--muted);font-size:13px;padding:22px;border-top:1px solid var(--line);background:white}
+@media(max-width:800px){.hero,.layout{grid-template-columns:1fr}.hero{gap:22px}.wrap{padding-top:32px}.summary{position:static}.top{height:66px;padding:0 18px}.brand{font-size:21px}.panel{padding:20px}.choices{grid-template-columns:1fr 1fr}}@media(max-width:440px){.choices{grid-template-columns:1fr}.hero h1{font-size:42px}.back{font-size:13px}}
+</style>
+</head>
+<body>
+<header class="top"><a class="brand" href="/">🟢 Helpsni</a><a class="back" href="/">← Zpět na hlavní web</a></header>
+<main class="wrap">
+<section class="hero">
+<div><span class="pill">🧰 Jednorázové zakázky v okolí</span><h1>Práce na den.<br><span style="color:var(--green)">Přivýdělek po svém.</span></h1><p>Zapni si nabídky jednorázových prací, vyber činnosti, které chceš přijímat, a nastav oblast, ve které chceš pracovat. Kdo chce pouze využívat taxi, tuto funkci zapnutou mít nemusí.</p></div>
+<div class="visual"><span class="eyebrow" style="color:#6be4a8">JAK TO FUNGUJE</span><h2>Zakázky poblíž tebe</h2><p>V ukázce by se vhodné nabídky filtrovaly podle typu práce a vzdálenosti.</p><div class="job"><span class="emoji">🧹</span><div><b>Pomoc s úklidem garáže</b><small>Dnes · 500 Kč · 4 km</small></div></div><div class="job"><span class="emoji">📦</span><div><b>Odnést pár kusů nábytku</b><small>Zítra · 800 Kč · 7 km</small></div></div><div class="job"><span class="emoji">🌿</span><div><b>Pomoc na zahradě</b><small>Dnes · 650 Kč · 11 km</small></div></div></div>
+</section>
+<div class="layout">
+<div>
+<section class="panel">
+<h2>Nastavení přivýdělku</h2><p class="sub">Funkci si můžeš zapnout při registraci nebo později ve svém profilu.</p>
+<div class="toggle-row"><div><b>Chci dostávat nabídky práce na den</b><small>Vypnutím přestaneš dostávat pracovní nabídky.</small></div><label class="switch"><input id="enabled" type="checkbox" aria-label="Zapnout nabídky práce na den"><span class="track"></span></label></div>
+<div id="settings">
+<div class="field"><label for="city">Výchozí město nebo oblast</label><input id="city" type="text" placeholder="Např. Chomutov" autocomplete="address-level2"><span class="hint">Přesnou adresu veřejně nezobrazujeme. Pro výběr zakázek stačí oblast.</span></div>
+<div class="field"><label for="radius">V jaké vzdálenosti chceš pracovat?</label><select id="radius"><option value="5">Do 5 km</option><option value="10">Do 10 km</option><option value="20" selected>Do 20 km</option><option value="30">Do 30 km</option><option value="50">Do 50 km</option></select></div>
+<div class="field"><div class="field-title">Jaké práce bys přijal/a?</div><span class="hint">Vyber jednu nebo více kategorií.</span><div class="choices" id="categories">
+<label class="choice"><input type="checkbox" value="Úklid garáže, sklepa a domu" checked><span>🧹 Úklid garáže, sklepa a domu</span></label>
+<label class="choice"><input type="checkbox" value="Stěhování a přenášení nábytku" checked><span>🚚 Stěhování a nábytek</span></label>
+<label class="choice"><input type="checkbox" value="Vyklízení nepotřebných věcí" checked><span>📦 Vyklízení věcí</span></label>
+<label class="choice"><input type="checkbox" value="Práce na zahradě a sekání trávy"><span>🌿 Zahrada a tráva</span></label>
+<label class="choice"><input type="checkbox" value="Pomoc s nákupem"><span>🛒 Pomoc s nákupem</span></label>
+<label class="choice"><input type="checkbox" value="Drobné domácí práce"><span>🔧 Drobné domácí práce</span></label>
+<label class="choice"><input type="checkbox" value="Nakládání a vykládání věcí"><span>📦 Nakládání a vykládání</span></label>
+<label class="choice"><input type="checkbox" value="Jiné jednorázové práce"><span>🛠️ Jiné jednorázové práce</span></label>
+</div></div>
+<button id="save" class="primary">Uložit nastavení</button><div id="status" class="status" role="status"></div>
+</div>
+</section>
+</div>
+<aside class="panel summary"><h3>Tvůj přehled</h3><div class="summary-line"><span>Funkce</span><b id="sumEnabled">Vypnutá</b></div><div class="summary-line"><span>Oblast</span><b id="sumCity">Neuvedena</b></div><div class="summary-line"><span>Dosah</span><b id="sumRadius">20 km</b></div><div class="summary-line"><span>Vybrané práce</span><b id="sumCount">3</b></div><p class="note">Tato stránka je první interaktivní návrh. Zatím ukládá nastavení pouze v tomto prohlížeči; propojení s účtem, databází a skutečným rozesíláním zakázek je potřeba dokončit před ostrým spuštěním.</p></aside>
+</div>
+</main>
+<footer class="footer">© <span id="year"></span> Helpsni · Práce na den</footer>
+<script>
+const $=id=>document.getElementById(id);const KEY='helpsni_work_preferences_v1';const enabled=$('enabled'),city=$('city'),radius=$('radius'),checks=[...document.querySelectorAll('#categories input')];
+function prefs(){return {enabled:enabled.checked,city:city.value.trim(),radius:Number(radius.value),categories:checks.filter(c=>c.checked).map(c=>c.value)}}
+function renderSummary(){const p=prefs();$('sumEnabled').textContent=p.enabled?'Zapnutá':'Vypnutá';$('sumCity').textContent=p.city||'Neuvedena';$('sumRadius').textContent=p.radius+' km';$('sumCount').textContent=String(p.categories.length);$('settings').style.opacity=p.enabled?'1':'.55';$('settings').style.pointerEvents=p.enabled?'auto':'none';}
+function load(){try{const p=JSON.parse(localStorage.getItem(KEY)||'null');if(p){enabled.checked=!!p.enabled;city.value=p.city||'';radius.value=String([5,10,20,30,50].includes(Number(p.radius))?p.radius:20);checks.forEach(c=>c.checked=(p.categories||[]).includes(c.value));}}catch{}renderSummary();}
+[enabled,city,radius,...checks].forEach(el=>el.addEventListener('change',renderSummary));city.addEventListener('input',renderSummary);
+$('save').addEventListener('click',()=>{const p=prefs();if(p.enabled&&!p.categories.length){$('status').textContent='Vyber alespoň jeden druh práce.';$('status').classList.add('show');return;}localStorage.setItem(KEY,JSON.stringify(p));$('status').textContent='Nastavení bylo uloženo v tomto prohlížeči. Pro skutečné nabídky bude potřeba připojit účet Helpsni.';$('status').classList.add('show');renderSummary();});
+$('year').textContent=new Date().getFullYear();load();
+</script>
+</body>
+</html>
