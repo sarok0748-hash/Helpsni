@@ -82,7 +82,7 @@ nav a:hover{color:var(--ink)}
 .auth-card{width:min(720px,100%);background:rgba(255,255,255,.96);border:1px solid #DFE8FF;border-radius:32px;padding:44px;box-shadow:0 30px 90px rgba(16,24,20,.12)}
 .back,.switch{border:0;background:none;cursor:pointer;color:#5b6761;padding:0}
 .back:hover{color:var(--ink)}
-.auth-logo{font-size:26px;font-weight:950;letter-spacing:-.06em;margin:42px 0 30px}
+.auth-logo{display:flex;align-items:center;margin:34px 0 26px}.auth-logo img{display:block;width:178px;height:60px;max-width:100%;object-fit:contain;object-position:left center}
 .auth-card h1{font-size:clamp(38px,5vw,52px);line-height:.95;letter-spacing:-.065em;margin:0 0 13px}
 .muted{color:var(--muted)}
 .formgrid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:28px}
